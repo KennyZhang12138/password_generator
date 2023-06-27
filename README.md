@@ -45,7 +45,7 @@ The following image shows the web application's appearance and functionality:
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+* The URL of the deployed application. https://kennyzhang12138.github.io/password_generator/
 
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
 
