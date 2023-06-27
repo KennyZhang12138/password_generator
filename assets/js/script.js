@@ -74,7 +74,7 @@ function determineLowecase() {
 
   if (hasLowercase === null || hasLowercase === "") {
     alert("Please answer Yes or No");
-    determineNumbers();
+    determineLowecase();
   } else if (yesAnswer.includes(hasLowercase)) {
     hasLowercase = true;
     return hasLowercase;
@@ -83,7 +83,7 @@ function determineLowecase() {
     return hasLowercase;
   } else {
     alert("Please answer Yes or No");
-    determineNumbers();
+    determineLowecase();
   }
   return hasLowercase;
 }
@@ -118,7 +118,7 @@ function generatePassword() {
   console.log(passwordLength);
   var hasUppercase = determineUppercase();
   console.log(hasUppercase);
-  var hasLowercase = determineNumbers();
+  var hasLowercase = determineLowecase();
   console.log(hasLowercase);
   var hasSpecialChar = determineSpecial();
   console.log(hasSpecialChar);
