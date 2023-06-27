@@ -22,21 +22,21 @@ generateBtn.addEventListener("click", writePassword);
 //functions to generate password: 
 function determineLength() {
   var passwordLength = prompt(
-    "Choose how many characters long you'd like your password to be (between 8-128 characters): "
+    "Choose length of your password (between 8-128 characters): "
   );
 
   if (passwordLength < 8) {
-    alert("Password length must be a number between 8-128 characters");
+    alert("Password length must be a number between 8-128");
     determineLength();
   } else if (passwordLength > 128) {
-    alert("Password length must be a number between 8-128 characters");
+    alert("Password length must be a number between 8-128");
     determineLength();
   } else if (isNaN(passwordLength)) {
-    alert("Password length must be a number between 8-128 characters");
+    alert("Password length must be a number between 8-128");
     determineLength();
   } else {
     alert(
-      "The next three screens will ask you what types of characters you would like to be included in your password.\nIf you choose 'No' for all, your password will only contain numbers."
+      "Please select which criteria to be included in your password.(lowercase, uppercase, and special characters) \nIf you choose 'No' for all, your password will only contain numbers."
     );
   }
   return passwordLength;
@@ -45,7 +45,7 @@ function determineLength() {
 //Function used to determine whether the user wants to include uppercase characters in the password
 function determineUppercase() {
   var hasUppercase = prompt(
-    "Do you want to include uppercase letters in your password? \n(Yes or No)"
+    "Including uppercase letters in your password? \n(Yes or No)"
   );
   hasUppercase = hasUppercase.toLowerCase();
 
@@ -68,7 +68,7 @@ function determineUppercase() {
 //Function used to determine whether the user wants to include numbers in the password
 function determineLowecase() {
   var hasLowercase = prompt(
-    "Do you want to include lowercase letters in your password? \n(Yes or No)"
+    "Including lowercase letters in your password? \n(Yes or No)"
   );
   hasLowercase = hasLowercase.toLowerCase();
 
@@ -91,7 +91,7 @@ function determineLowecase() {
 //Function used to determine whether the user wants to include special characters in the password
 function determineSpecial() {
   var hasSpecialChar = prompt(
-    "Do you want to include special characters in your password? \n(Yes or No)"
+    "Including special characters in your password? \n(Yes or No)"
   );
   hasSpecialChar = hasSpecialChar.toLowerCase();
 
